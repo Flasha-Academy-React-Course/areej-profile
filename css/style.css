@@ -1,0 +1,110 @@
+:root {
+  --primary-color: rgb(96, 96, 134);
+  --bg-color: rgb(227, 166, 205);
+  --text-color: rgb(84, 33, 33);
+}
+.project-card img {
+  width: 80%;
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+#profile img {
+    width: 200px;
+    height: 200px;
+    display: block;
+   /* margin: auto;
+    border-radius: 100%;*/
+}
+nav a {
+    margin: 0 5px;
+}
+h3 {
+    color: rgb(91, 48, 72);
+}
+h2{
+    color: rgb(40, 1, 19);
+}
+
+.project-card {
+    text-align: center;
+}
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+     margin-bottom: 15px;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#theme-btn {
+    margin-bottom: 20px;
+     margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dark-mode {
+  background-color: rgb(15, 14, 14);
+  color: rgb(242, 242, 249);
+ 
+}
+
+#contact {
+  padding: 20px;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact-form {
+  width: 80%;
+  margin: auto;
+}
+
+#contact-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+#contact-form textarea {
+  height: 100px;
+}
+
+#contact-form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+}
